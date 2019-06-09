@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import FloodGame from './FloodGame';
+import App from './app';
 
 ReactDOM.render(
-  <App width="5" height="5"/>,
+  <App/>,
   document.getElementById('root')
 );

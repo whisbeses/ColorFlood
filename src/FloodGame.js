@@ -8,7 +8,7 @@ import './index.css';
 const SIZE = 12;
 const COLORS = ['blue','red','green','yellow','orange'];
 
-class App extends Component {
+class FloodGame extends Component {
   constructor(props) {
     super(props);
     this.incrementCount = this.incrementCount.bind(this);
@@ -50,9 +50,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="content">
+      <div className="content" style={{"background-color": "#1d1e19", padding: "10px"}}>
         <div className="header">
-          <h1>Color Flood</h1>
+          <h1>Food Flood</h1>
           <div className="newgame" onClick={(e) => this.restart()}>New Game</div>
           <div className="count">Changes <span>{this.state.count}</span></div>
         </div>
@@ -73,4 +73,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default FloodGame;
